@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Godeano Sports</title>
+  <style>
+    /* El CSS es el mismo, sigue siendo perfecto para la tarea */
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; padding: 1em; margin: 0 0 100px 0; background: #f5f5f9; color: #333; }
+    .header, .agenda-section { text-align: center; max-width: 1000px; margin: 0 auto 2rem auto; padding: 1rem; border-bottom: 4px solid #0056b3; }
+    h1, h2 { color: #003366; margin: 0; }
+    .station-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; max-width: 1200px; margin: 2em auto; }
+    .station-button { display: flex; flex-direction: column; justify-content: center; height: 80px; padding: 1em; font-size: 1rem; font-weight: bold; background: #007BFF; color: white; border: 2px solid transparent; border-radius: 8px; cursor: pointer; text-align: left; transition: background-color 0.2s, transform 0.2s; }
+    .station-button small { font-weight: normal; opacity: 0.9; margin-top: 4px; }
+    .station-button:hover { background: #0056b3; transform: translateY(-2px); }
+    .station-button.active { background-color: #004a99; border-color: #ffc107; box-shadow: 0 0 10px rgba(255, 193, 7, 0.5); }
+    .player-section { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; padding: 1rem; box-shadow: 0 -4px 10px rgba(0,0,0,0.1); border-top: 1px solid #ddd; z-index: 1000; }
+    audio { width: 100%; }
+    .error-message { color: #D8000C; font-weight: bold; margin-top: 1em; text-align: center; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+    .agenda-list { list-style: none; padding: 0; text-align: left; }
+    .agenda-list li { background-color: #fff; padding: 1rem; border-radius: 5px; margin-bottom: 0.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .agenda-list li.clickable { cursor: pointer; transition: background-color 0.2s; }
+    .agenda-list li.clickable:hover { background-color: #e9ecef; }
+  </style>
+</head>
+<body>
+  
+  <header class="header">
+    <h1>Godeano Sports</h1>
+    <p>La casa del deporte en vivo. Selecciona una emisora para comenzar.</p>
+  </header>
+
+  <section class="agenda-section">
+    <h2>Agenda del Día</h2>
+    <ul id="agenda-list" class="agenda-list">
+      <li>Cargando agenda deportiva...</li>
+    </ul>
+  </section>
+
+  <div id="station-list" class="station-list">
+    <!-- Las emisoras se cargarán aquí desde radios.json -->
+  </div>
+
+  <div id="live-announcer" class="visually-hidden" aria-live="polite"></div>
+
+  <section class="player-section">
+    <audio id="audioPlayer" controls></audio>
+    <div id="errorMessage" class="error-message"></div>
+  </section>
+
+  <script>
+    // --- ELEMENTOS DEL HTML ---
+    const audioPlayer = document.getElementById("audioPlayer");
+    const errorMessage = document.getElementById("errorMessage");
+    const stationListContainer = document.getElementById("station-list");
+    const agendaListContainer = document.getElementById('agenda-list');
+    const liveAnnouncer = document.getElementById("live-announcer");
+    
+    // --- VARIABLES GLOBALES ---
+    let currentActiveButton = null;
+    let stationsData = [];
+
+    // --- ======================================================= ---
+    // ---              CONFIGURACIÓN IMPORTANTE                   ---
+    // --- ======================================================= ---
+
+    // 1. URL "Raw" de tu archivo radios.json.
+const RADIOS_JSON_URL = 'radios.json';
+    // 2. Clave y URL de la API de TheSportsDB. **¡URL CORREGIDA!**
+    const THESPORTSDB_API_KEY = "1"; // La clave pública y gratuita.
+    const API_URL = `https://www.thesportsdb.com/api/v1/json/3/eventsday.php?k=${THESPORTSDB_API_KEY}`;
+
+
+    // --- ======================================================= ---
+
+    async function initializeApp() {
+      try {
+        const response = await fetch(RADIOS_JSON_URL);
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        stationsData = await response.json();
+        renderStations(stationsData);
+        loadAgenda(); 
+      } catch (error) {
+        stationListContainer.innerHTML = '<p class="error-message">Error fatal: No se pudieron cargar las emisoras. Asegúrate de abrir este archivo usando "Live Server".</p>';
+        console.error("Error cargando radios.json:", error);
+      }
+    }
+
+    function renderStations(stations) {
+      stationListContainer.innerHTML = '';
+      stations.forEach(station => {
+        const button = document.createElement("button");
+        button.className = "station-button";
+        button.dataset.stationId = station.id; 
+        button.innerHTML = `${station.nombre} <small>${station.descripcion}</small>`;
+        button.addEventListener('click', () => changeStream(station, button));
+        stationListContainer.appendChild(button);
+      });
+    }
+    
+    async function loadAgenda() {
+      try {
+        const response = await fetch(API_URL);
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const data = await response.json();
+        renderAgenda(data.events || []);
+      } catch (error) {
+        agendaListContainer.innerHTML = '<li>Error al cargar la agenda. Revisa tu conexión a internet.</li>';
+        console.error("Error cargando la agenda desde la API:", error);
+      }
+    }
+
+    function renderAgenda(events) {
+      agendaListContainer.innerHTML = '';
+      if (events === null || events.length === 0) {
+        agendaListContainer.innerHTML = '<li>No hay eventos deportivos principales programados para hoy en las ligas cubiertas por la API.</li>';
+        return;
+      }
+      
+      const sportIcons = { 'Soccer': '⚽️', 'Baseball': '⚾️', 'Basketball': '🏀', 'American Football': '🏈', 'Ice Hockey': '🏒' };
+
+      events.forEach(event => {
+        const li = document.createElement('li');
+        const time = event.strTime ? event.strTime.substring(0, 5) : 'Hora por confirmar';
+        const sportIcon = sportIcons[event.strSport] || '🏟️';
+        li.textContent = `${sportIcon} ${time} - ${event.strEvent}`;
+
+        const homeTeamId = event.idHomeTeam;
+        const awayTeamId = event.idAwayTeam;
+        
+        const stationForEvent = stationsData.find(station => {
+          if (!station.id_thesportsdb) return false;
+          if (Array.isArray(station.id_thesportsdb)) {
+            return station.id_thesportsdb.includes(homeTeamId) || station.id_thesportsdb.includes(awayTeamId);
+          }
+          return station.id_thesportsdb === homeTeamId || station.id_thesportsdb === awayTeamId;
+        });
+
+        if (stationForEvent) {
+          li.innerHTML += ` <br><small style='color:#0056b3; font-weight:bold;'>▶️ Escuchar en ${stationForEvent.nombre}</small>`;
+          li.classList.add('clickable');
+          li.dataset.stationId = stationForEvent.id;
+        }
+        agendaListContainer.appendChild(li);
+      });
+    }
+
+    function changeStream(station, buttonElement) {
+      errorMessage.textContent = "";
+      audioPlayer.src = station.streams[0]; 
+      audioPlayer.play().catch((err) => {
+        const errorText = `Error al cargar: ${station.nombre}`;
+        errorMessage.textContent = errorText;
+        liveAnnouncer.textContent = errorText;
+        console.error("Playback error:", err);
+      });
+      liveAnnouncer.textContent = `Reproduciendo: ${station.nombre}`;
+      if (currentActiveButton) { currentActiveButton.classList.remove('active'); }
+      buttonElement.classList.add('active');
+      currentActiveButton = buttonElement;
+    }
+    
+    agendaListContainer.addEventListener('click', function(e) {
+      const listItem = e.target.closest('li');
+      if (listItem && listItem.dataset.stationId) {
+        const stationId = listItem.dataset.stationId;
+        const targetButton = stationListContainer.querySelector(`[data-station-id="${stationId}"]`);
+        if (targetButton) { targetButton.click(); targetButton.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      }
+    });
+
+    document.addEventListener("keydown", function(event) {
+        if (document.activeElement.tagName === 'INPUT') return;
+        switch (event.key) {
+            case "k": case " ": event.preventDefault(); if (audioPlayer.paused) { audioPlayer.play(); } else { audioPlayer.pause(); } break;
+            case "m": audioPlayer.muted = !audioPlayer.muted; break;
+            case "ArrowRight": audioPlayer.currentTime += 5; break;
+            case "ArrowLeft": audioPlayer.currentTime -= 5; break;
+            case "ArrowUp": event.preventDefault(); audioPlayer.volume = Math.min(audioPlayer.volume + 0.1, 1); break;
+            case "ArrowDown": event.preventDefault(); audioPlayer.volume = Math.max(audioPlayer.volume - 0.1, 0); break;
+        }
+    });
+    
+    audioPlayer.addEventListener("error", function () {
+      const errorText = "No se pudo cargar la emisora. Puede estar offline o el enlace no es compatible.";
+      errorMessage.textContent = errorText;
+      liveAnnouncer.textContent = errorText;
+    });
+
+    document.addEventListener('DOMContentLoaded', initializeApp);
+  </script>
+</body>
+</html>

@@ -1,0 +1,588 @@
+[
+  {
+    "id": "ktnq_1020_am",
+    "nombre": "KTNQ 1020 AM",
+    "descripcion": "Los Angeles Dodgers",
+    "pais": "USA",
+    "id_thesportsdb": ["135275"],
+    "streams": ["https://lmn.streamguys1.com/ktnqam-icy?key=a1e751202157c8d037a4f453698087f605c937356359a6774ea3fcd2e53d04e4"]
+  },
+  {
+    "id": "kwkw_1330",
+    "nombre": "KWKW 1330 AM Tu Liga Radio",
+    "descripcion": "LAFC, Galaxy, Lakers, Clippers, Rams, TUDN MX",
+    "pais": "USA",
+    "id_thesportsdb": ["137351", "135118", "134880", "134878", "134808", "136062", "135061", "135063"],
+    "streams": ["https://14933.live.streamtheworld.com/KWKWAMAAC_SC?kwkw-tu-liga-radio-1330-am", "https://playerservices.streamtheworld.com/api/livestream-redirect/KWKWAMAAC"]
+  },
+  {
+    "id": "kfwb_la",
+    "nombre": "KFWB 980 AM \"La Mera Mera\"",
+    "descripcion": "Los Angeles FC",
+    "pais": "USA",
+    "id_thesportsdb": ["137351"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/KFWBAMAAC.aac"]
+  },
+  {
+    "id": "espn_west_palm",
+    "nombre": "ESPN West Palm",
+    "descripcion": "Inter Miami, TUDN/ESPN Radio",
+    "pais": "USA",
+    "id_thesportsdb": ["138243", "136062"],
+    "streams": ["http://stream.abacast.net/playlist/goodkarma-weflamaac-ibc2.m3u", "https://prod-3-88-6-23.amperwave.net/goodkarma-weflammp3-ibc2", "https://live.amperwave.net/playlist/goodkarma-weflamaac-ibc2.m3u"]
+  },
+  {
+    "id": "wrto_chicago",
+    "nombre": "WRTO 1200 AM Chicago",
+    "descripcion": "Bulls, Cubs, Liga MX (TUDN Radio)",
+    "pais": "USA",
+    "id_thesportsdb": ["134870", "135274", "136062"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/WRTOAM_ADP.aac"]
+  },
+  {
+    "id": "futbol_de_primera",
+    "nombre": "Fútbol de Primera",
+    "descripcion": "Análisis, Selección de USA",
+    "pais": "USA",
+    "id_thesportsdb": ["135246"],
+    "streams": ["https://stream.zeno.fm/fzfegup2rnluv"]
+  },
+  {
+    "id": "padres_xemo",
+    "nombre": "XEMO La Poderosa 860 AM",
+    "descripcion": "San Diego Padres",
+    "pais": "México / USA",
+    "id_thesportsdb": "135282",
+    "streams": ["https://streamingcwsradio30.com:7024/stream"]
+  },
+  {
+    "id": "red_sox_spanish",
+    "nombre": "WAMG 890 AM \"La Mega\"",
+    "descripcion": "Boston Red Sox",
+    "pais": "USA",
+    "id_thesportsdb": "135270",
+    "streams": ["https://ais-sa1.streamon.fm/7926_96k.aac"]
+  },
+  {
+    "id": "nationals_spanish",
+    "nombre": "WDCN 87.7 FM \"La Nueva\"",
+    "descripcion": "Washington Nationals",
+    "pais": "USA",
+    "id_thesportsdb": "135293",
+    "streams": ["https://ais-sa1.streamon.fm/7925_96k.aac"]
+  },
+  {
+    "id": "kbno_broncos",
+    "nombre": "KBNO 97.7 FM \"Qué Bueno\"",
+    "descripcion": "Denver Broncos",
+    "pais": "USA",
+    "id_thesportsdb": "134800",
+    "streams": ["http://ca3.rcast.net:8038/stream"]
+  },
+  {
+    "id": "ksun_suns",
+    "nombre": "KSUN 1400 AM La Mejor",
+    "descripcion": "Phoenix Suns",
+    "pais": "USA",
+    "id_thesportsdb": "134887",
+    "streams": ["https://sonic-ca.instainternet.com:8068/;"]
+  },
+  {
+    "id": "eagles_spanish",
+    "nombre": "WEMG La Mega 105.7 FM",
+    "descripcion": "Philadelphia Eagles",
+    "pais": "USA",
+    "id_thesportsdb": "134812",
+    "streams": ["https://s2.netradiostation.com/proxy/ticosportseaglesaac?mp=/ticosportseagles.aac", "https://ice41.securenetsystems.net/WEMG.m3u"]
+  },
+  {
+    "id": "chiefs_spanish",
+    "nombre": "KPRS 103.3 FM \"KPRS-HD2\"",
+    "descripcion": "Kansas City Chiefs",
+    "pais": "USA",
+    "id_thesportsdb": "134806",
+    "streams": ["https://s2.netradiostation.com/proxy/ticosportskc?mp=/ticosportschiefs.aac"]
+  },
+  {
+    "id": "kfzo_dallas",
+    "nombre": "KFZO 99.1 FM",
+    "descripcion": "Dallas Mavericks, FC Dallas",
+    "pais": "USA",
+    "id_thesportsdb": ["134875", "135114"],
+    "streams": ["https://lmn.streamguys1.com/kfzofm/playlist.m3u8?key=a1e751202157c8d037a4f453698087f605c937356359a6774ea3fcd2e53d04e4"]
+  },
+  {
+    "id": "kxtn_spurs",
+    "nombre": "KXTN 1350 AM",
+    "descripcion": "San Antonio Spurs",
+    "pais": "USA",
+    "id_thesportsdb": "134891",
+    "streams": ["https://lmn.streamguys1.com/kxtnam/playlist.m3u8?key=4c77380708b876af96bab85bedf72b796fdca78b4ccf21d31f681a4a34b03afe"]
+  },
+  {
+    "id": "golden_knights_spanish",
+    "nombre": "ESPN Deportes 1460 AM",
+    "descripcion": "Vegas Golden Knights",
+    "pais": "USA",
+    "id_thesportsdb": "137951",
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/KENOAMAAC.aac"]
+  },
+  {
+    "id": "cardinals_spanish_wijr",
+    "nombre": "WIJR 880 AM \"La Jefa\"",
+    "descripcion": "St. Louis Cardinals",
+    "pais": "USA",
+    "id_thesportsdb": "135287",
+    "streams": ["https://stream.zeno.fm/ssnufnzvn4xvv"]
+  },
+  {
+    "id": "w_deportes_mx",
+    "nombre": "W Deportes 730 AM",
+    "descripcion": "Selección MX, América, Pachuca, Chivas, Diablos Rojos",
+    "pais": "México",
+    "id_thesportsdb": ["136062", "135061", "135063", "135065", "135210"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/TDW730AMAAC.aac"]
+  },
+  {
+    "id": "rpp_mundial_pe",
+    "nombre": "RPP Mundial",
+    "descripcion": "Selección Peruana de Fútbol",
+    "pais": "Perú",
+    "id_thesportsdb": ["135555"],
+    "streams": ["https://us-b4-p-e-cg11-audio.cdn.mdstrm.com/live-audio-aw/5faee885eb830d06cf22ed4a"]
+  },
+  {
+    "id": "caracol_radio",
+    "nombre": "Caracol Radio",
+    "descripcion": "Selección Colombia, Liga BetPlay",
+    "pais": "Colombia",
+    "id_thesportsdb": ["135769"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/CARACOL_RADIOAAC.aac"]
+  },
+  {
+    "id": "blu_radio",
+    "nombre": "Blu Radio",
+    "descripcion": "Selección Colombia, Liga Colombiana",
+    "pais": "Colombia",
+    "id_thesportsdb": ["135769"],
+    "streams": ["http://playerservices.streamtheworld.com/m3u/BLURADIO.m3u"]
+  },
+  {
+    "id": "monumental_bo",
+    "nombre": "Radio Monumental Bolivia",
+    "descripcion": "Selección Boliviana, Liga Boliviana",
+    "pais": "Bolivia",
+    "id_thesportsdb": ["135408"],
+    "streams": ["http://streaming2.locucionar.com:9149/stream"]
+  },
+  {
+    "id": "rq_910_am",
+    "nombre": "RQ 910 AM",
+    "descripcion": "Selección Venezuela, Caracas FC",
+    "pais": "Venezuela",
+    "id_thesportsdb": ["135630", "135011"],
+    "streams": ["http://streaming3.globalhost.net.ve:9014/stream"]
+  },
+  {
+    "id": "la_red_ar",
+    "nombre": "La Red AM 910",
+    "descripcion": "Boca, River, Racing, SL, Ind, Vélez, Selección",
+    "pais": "Argentina",
+    "id_thesportsdb": ["134848", "134850", "134854", "134851", "134849", "134852", "135422"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/LA_RED_AM910.mp3"]
+  },
+  {
+    "id": "rivadavia_ar",
+    "nombre": "Radio Rivadavia",
+    "descripcion": "Boca, River, Racing, SL, Ind, Vélez, Selección",
+    "pais": "Argentina",
+    "id_thesportsdb": ["134848", "134850", "134854", "134851", "134849", "134852", "135422"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/RIVADAVIAAAC_SC?dist=triton-widget&pname=tdwidgets"]
+  },
+  {
+    "id": "mitre_ar",
+    "nombre": "Radio Mitre",
+    "descripcion": "Boca, River, Racing, SL, Ind, Vélez, Selección",
+    "pais": "Argentina",
+    "id_thesportsdb": ["134848", "134850", "134854", "134851", "134849", "134852", "135422"],
+    "streams": ["http://playerservices.streamtheworld.com/api/livestream-redirect/AM790_56AAC_SC"]
+  },
+  {
+    "id": "dsports_radio",
+    "nombre": "D-Sports Radio 103.1 FM",
+    "descripcion": "Boca, River, Racing, SL, Ind, Vélez, Selección",
+    "pais": "Argentina",
+    "id_thesportsdb": ["134848", "134850", "134854", "134851", "134849", "134852", "135422"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/DSPORTSRADIOAAC.aac"]
+  },
+  {
+    "id": "continental_ar",
+    "nombre": "Radio Continental",
+    "descripcion": "Boca, River, Racing, SL, Ind, Vélez, Selección",
+    "pais": "Argentina",
+    "id_thesportsdb": ["134848", "134850", "134854", "134851", "134849", "134852", "135422"],
+    "streams": ["https://frontend.radiohdvivo.com/continental/live"]
+  },
+  {
+    "id": "cadena_3",
+    "nombre": "Cadena 3",
+    "descripcion": "Equipos de Córdoba, Boca, River, Selección",
+    "pais": "Argentina",
+    "id_thesportsdb": ["135338", "134863", "135339", "135474", "134848", "134850", "135422"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO3_SC"]
+  },
+  {
+    "id": "nihuil_am",
+    "nombre": "Radio Nihuil AM 680",
+    "descripcion": "Godoy Cruz, Ind. Rivadavia",
+    "pais": "Argentina",
+    "id_thesportsdb": ["135048", "135501"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/NIHUIL_AM680AAC.aac"]
+  },
+  {
+    "id": "radio_suquia",
+    "nombre": "Radio Suquía",
+    "descripcion": "Talleres, Belgrano, Instituto, Racing (Cba)",
+    "pais": "Argentina",
+    "id_thesportsdb": ["135338", "134863", "135339", "135474"],
+    "streams": ["https://streaming01.shockmedia.com.ar:10945/"]
+  },
+  {
+    "id": "del_plata_ar",
+    "nombre": "Radio del Plata",
+    "descripcion": "Boca Juniors, Selección Argentina",
+    "pais": "Argentina",
+    "id_thesportsdb": ["134848", "135422"],
+    "streams": ["https://streaming01.shockmedia.com.ar:10217/stream"]
+  },
+  {
+    "id": "adn_radio_cl",
+    "nombre": "ADN Radio",
+    "descripcion": "Selección de Chile, Colo-Colo",
+    "pais": "Chile",
+    "id_thesportsdb": ["135759", "135041"],
+    "streams": ["https://27413.live.streamtheworld.com/ADNAAC.aac"]
+  },
+  {
+    "id": "rock_pop_py",
+    "nombre": "Rock&Pop Paraguay 95.5 FM",
+    "descripcion": "Selección Paraguaya, Cerro, Libertad",
+    "pais": "Paraguay",
+    "id_thesportsdb": ["135547", "135031", "135030"],
+    "streams": ["https://cp9.serverse.com/proxy/rockandpop/stream"]
+  },
+  {
+    "id": "diblu_fm",
+    "nombre": "Diblu FM 88.9",
+    "descripcion": "LDU, Barcelona, Ind. del Valle, Selección",
+    "pais": "Ecuador",
+    "id_thesportsdb": ["135003", "135002", "135688", "135790"],
+    "streams": ["https://streamingecuador.net:9002/stream"]
+  },
+  {
+    "id": "universal_uy",
+    "nombre": "970 Universal",
+    "descripcion": "Peñarol, Nacional, Selección Uruguaya",
+    "pais": "Uruguay",
+    "id_thesportsdb": ["135021", "135020", "135624"],
+    "streams": ["https://970universal-3.nty.uy/"]
+  },
+  {
+    "id": "cadena_ser_es",
+    "nombre": "Cadena SER",
+    "descripcion": "Selección ESP, R. Madrid, Barcelona, Atl. Madrid",
+    "pais": "España",
+    "id_thesportsdb": ["133744", "133729", "133739", "133732"],
+    "streams": ["http://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3"]
+  },
+  {
+    "id": "cope_es",
+    "nombre": "Cope Deportes",
+    "descripcion": "Selección ESP, R. Madrid, Barcelona, Atl. Madrid",
+    "pais": "España",
+    "id_thesportsdb": ["133744", "133729", "133739", "133732"],
+    "streams": ["https://net2-cope-rrcast.flumotion.com/cope/net2-low.mp3"]
+  },
+  {
+    "id": "onda_cero_es",
+    "nombre": "Onda Cero",
+    "descripcion": "Selección ESP, R. Madrid, Barcelona, Atl. Madrid",
+    "pais": "España",
+    "id_thesportsdb": ["133744", "133729", "133739", "133732"],
+    "streams": ["https://atres-live.ondacero.es/live/ondacero/bitrate_1.m3u8"]
+  },
+  {
+    "id": "radio_marca_es",
+    "nombre": "Radio Marca Nacional",
+    "descripcion": "Selección ESP, R. Madrid, Barcelona, Atl. Madrid",
+    "pais": "España",
+    "id_thesportsdb": ["133744", "133729", "133739", "133732"],
+    "streams": ["https://www.marca.com/radio/geoblock/getSrcApp.php?dial=Nacional&dist=radiomarcaweb"]
+  },
+  {
+    "id": "rne_es",
+    "nombre": "RNE",
+    "descripcion": "Tablero Deportivo - Grandes de España",
+    "pais": "España",
+    "id_thesportsdb": ["133744", "133729", "133739", "133732"],
+    "streams": ["https://rtvelivestream.rtve.es/rtvesec/rne/rne_r1_main.m3u8"]
+  },
+  {
+    "id": "catalunya_radio",
+    "nombre": "Catalunya Ràdio",
+    "descripcion": "FC Barcelona, RCD Espanyol",
+    "pais": "España",
+    "idioma": "Catalán",
+    "id_thesportsdb": ["133739", "133758"],
+    "streams": ["https://shoutcast.ccma.cat/ccma/catalunyaradioHD.mp3"]
+  },
+  {
+    "id": "rac1",
+    "nombre": "RAC1",
+    "descripcion": "FC Barcelona, RCD Espanyol",
+    "pais": "España",
+    "idioma": "Catalán",
+    "id_thesportsdb": ["133739", "133758"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/RAC_1.mp3"]
+  },
+  {
+    "id": "apunt_radio",
+    "nombre": "à Punt Ràdio",
+    "descripcion": "Valencia CF, Levante UD",
+    "pais": "España",
+    "idioma": "Valenciano",
+    "id_thesportsdb": ["133734", "133794"],
+    "streams": ["https://bcovlive-a.akamaihd.net/0841326767184ef7acc0489071ec64da/eu-central-1/6057955885001/profile_0/chunklist_dvr.m3u8"]
+  },
+  {
+    "id": "radio_betis",
+    "nombre": "Radio Real Betis",
+    "descripcion": "Real Betis Balompié",
+    "pais": "España",
+    "id_thesportsdb": "133742",
+    "streams": ["https://comcast01-o-cloud.flumotion.com/betistv/radio1.mp3"]
+  },
+  {
+    "id": "sevilla_fc_radio",
+    "nombre": "Sevilla FC Radio",
+    "descripcion": "Sevilla FC",
+    "pais": "España",
+    "id_thesportsdb": "133731",
+    "streams": ["https://open.http.mp.streamamg.com/p/3001314/sp/300131400/playManifest/entryId/0_ye0b8tc0/format/applehttp/protocol/https/uiConfId/30026292/a.m3u8"]
+  },
+  {
+    "id": "vcf_radio",
+    "nombre": "VCF Radio",
+    "descripcion": "Valencia CF",
+    "pais": "España",
+    "id_thesportsdb": "133734",
+    "streams": ["https://radio-valencia-direct.flumotion.com/rvfc/shoutcast.mp3"]
+  },
+  {
+    "id": "ud_las_palmas_radio",
+    "nombre": "UD Las Palmas Radio",
+    "descripcion": "UD Las Palmas",
+    "pais": "España",
+    "id_thesportsdb": "133795",
+    "streams": ["https://streaming020.gestec-video.com/hls/UDRADIO.m3u8"]
+  },
+  {
+    "id": "euskadi_irratia",
+    "nombre": "Euskadi Irratia",
+    "descripcion": "Real Sociedad",
+    "pais": "España",
+    "idioma": "Euskera",
+    "id_thesportsdb": "133736",
+    "streams": ["http://mp3-eitb.stream.flumotion.com/eitb/euskadiirratia.mp3"]
+  },
+  {
+    "id": "radio_euskadi",
+    "nombre": "Radio Euskadi",
+    "descripcion": "Athletic Club",
+    "pais": "España",
+    "id_thesportsdb": "133745",
+    "streams": ["http://mp3-eitb.stream.flumotion.com/eitb/radioeuskadi.mp3"]
+  },
+  {
+    "id": "radio_vitoria",
+    "nombre": "Radio Vitoria",
+    "descripcion": "Deportivo Alavés",
+    "pais": "España",
+    "id_thesportsdb": "133782",
+    "streams": ["http://mp3-eitb.stream.flumotion.com/eitb/radiovitoria.mp3"]
+  },
+  {
+    "id": "radio_galega",
+    "nombre": "Radio Galega",
+    "descripcion": "Celta de Vigo, Dep. La Coruña",
+    "pais": "España",
+    "idioma": "Gallego",
+    "id_thesportsdb": ["133789", "133791"],
+    "streams": ["https://crtvg-radiogalega-hls.flumotion.cloud/playlist.m3u8"]
+  },
+  {
+    "id": "ser_girona",
+    "nombre": "Cadena SER Girona",
+    "descripcion": "Girona FC",
+    "pais": "España",
+    "id_thesportsdb": "134293",
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/SER_GIRONA.mp3"]
+  },
+  {
+    "id": "ser_cadiz",
+    "nombre": "Cadena SER+ Cádiz",
+    "descripcion": "Cádiz CF",
+    "pais": "España",
+    "id_thesportsdb": "133797",
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/SER_MAS_CADIZ.mp3"]
+  },
+  {
+    "id": "ib3_radio",
+    "nombre": "IB3 Ràdio",
+    "descripcion": "RCD Mallorca",
+    "pais": "España",
+    "idioma": "Catalán",
+    "id_thesportsdb": "133783",
+    "streams": ["https://icecast.ib3radio.com/ib3radio.mp3"]
+  },
+  {
+    "id": "cope_mallorca",
+    "nombre": "COPE Mallorca",
+    "descripcion": "RCD Mallorca",
+    "pais": "España",
+    "id_thesportsdb": "133783",
+    "streams": ["https://wecast19-h-cloud.flumotion.com/copesedes/mallorca.mp3"]
+  },
+  {
+    "id": "cope_huesca",
+    "nombre": "COPE Huesca",
+    "descripcion": "SD Huesca",
+    "pais": "España",
+    "id_thesportsdb": "134290",
+    "streams": ["https://wecast02-i-cloud.flumotion.com/copesedes/huesca.mp3"]
+  },
+  {
+    "id": "ondacero_pamplona",
+    "nombre": "Onda Cero Pamplona",
+    "descripcion": "CA Osasuna",
+    "pais": "España",
+    "id_thesportsdb": "133788",
+    "streams": ["https://atres-live.ondacero.es/live/delegaciones/oc/pamplona/master.m3u8"]
+  },
+  {
+    "id": "cope_sevilla",
+    "nombre": "COPE Sevilla",
+    "descripcion": "Sevilla FC, Real Betis",
+    "pais": "España",
+    "id_thesportsdb": ["133731", "133742"],
+    "streams": ["http://sevilla.copesedes.stream.flumotion.com/copesedes/sevilla.mp3.m3u"]
+  },
+  {
+    "id": "ondacero_sevilla",
+    "nombre": "Onda Cero Sevilla",
+    "descripcion": "Sevilla FC, Real Betis",
+    "pais": "España",
+    "id_thesportsdb": ["133731", "133742"],
+    "streams": ["https://atres-live.ondacero.es/live/delegaciones/oc/sevilla/master.m3u8"]
+  },
+  {
+    "id": "radiomarca_sevilla",
+    "nombre": "Radio Marca Sevilla",
+    "descripcion": "Sevilla FC, Real Betis",
+    "pais": "España",
+    "id_thesportsdb": ["133731", "133742"],
+    "streams": ["https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOMARCA_SEVILLA.mp3"]
+  },
+  {
+    "id": "ondacero_valencia",
+    "nombre": "Onda Cero Valencia",
+    "descripcion": "Valencia CF, Levante UD",
+    "pais": "España",
+    "id_thesportsdb": ["133734", "133794"],
+    "streams": ["https://atres-live.ondacero.es/live/delegaciones/oc/valencia/master.m3u8"]
+  },
+  {
+    "id": "ondacero_barcelona",
+    "nombre": "Onda Cero Barcelona",
+    "descripcion": "FC Barcelona, RCD Espanyol",
+    "pais": "España",
+    "id_thesportsdb": ["133739", "133758"],
+    "streams": ["https://atres-live.ondacero.es/live/delegaciones/oc/barcelona/bitrate_1.m3u8"]
+  },
+  {
+    "id": "radiomarca_barcelona",
+    "nombre": "Radio Marca Barcelona",
+    "descripcion": "FC Barcelona, RCD Espanyol",
+    "pais": "España",
+    "id_thesportsdb": ["133739", "133758"],
+    "streams": ["http://radioweb.radiomarcabarcelona.com:9000/stream.m3u"]
+  },
+  {
+    "id": "radiomarca_donostia",
+    "nombre": "Radio Marca Donostia",
+    "descripcion": "Real Sociedad",
+    "pais": "España",
+    "id_thesportsdb": "133736",
+    "streams": ["https://marca-sansebastian.streaming-pro.com:6101/live"]
+  },
+  {
+    "id": "radiomarca_vigo",
+    "nombre": "Radio Marca Vigo",
+    "descripcion": "Celta de Vigo",
+    "pais": "España",
+    "id_thesportsdb": "133789",
+    "streams": ["https://streaming.enacast.com/radiomarcavigoHD.mp3"]
+  },
+  {
+    "id": "radiomarca_burgos",
+    "nombre": "Radio Marca Burgos",
+    "descripcion": "Burgos CF",
+    "pais": "España",
+    "id_thesportsdb": "134294",
+    "streams": ["https://relay.stream.enacast-cloud.com:40334/radiomarcaburgosSD.mp3"]
+  },
+  {
+    "id": "radiomarca_valladolid",
+    "nombre": "Radio Marca Valladolid",
+    "descripcion": "Real Valladolid",
+    "pais": "España",
+    "id_thesportsdb": "133784",
+    "streams": ["https://radiomarcavalladolid.streaming-pro.com:6106/radiomarca.mp3"]
+  },
+  {
+    "id": "canarias_radio",
+    "nombre": "Canarias Radio",
+    "descripcion": "UD Las Palmas, CD Tenerife",
+    "pais": "España",
+    "id_thesportsdb": ["133795", "133790"],
+    "streams": ["https://rtvc-radio.flumotion.com/rtvc-radio/radio1-high.mp3"]  },
+  {
+    "id": "radio_clm",
+    "nombre": "Radio Castilla-La Mancha",
+    "descripcion": "Albacete Balompié",
+    "pais": "España",
+    "id_thesportsdb": "133785",
+    "streams": ["https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_qilzwlkz/protocol/https/format/applehttp/a.m3u8"]
+  },
+  {
+    "id": "rna_andorra",
+    "nombre": "Ràdio Nacional d'Andorra",
+    "descripcion": "FC Andorra",
+    "pais": "Andorra",
+    "id_thesportsdb": "134608",
+    "streams": ["https://play.cdn.enetres.net/56495F77FD124FECA75590A906965F2C023/023/playlist.m3u8"]
+  },
+     "id": "sin_tregua_radio",
+    "nombre": "Sin Tregua Radio",
+    "descripcion": "Racing de Santander (Fan Radio)",
+    "pais": "España",
+    "id_thesportsdb": ["133796"],
+    "streams": ["https://stream.zeno.fm/4t2071y0w7zuv"]
+  } {
+    "id": "la_super_7_fm",
+    "nombre": "La Super 7 FM",
+    "descripcion": "Deportes y noticias",
+    "pais": "República Dominicana",
+    "streams": ["https://sonic.radiostreaminglatino.com:10849/"]
+  }
+]
