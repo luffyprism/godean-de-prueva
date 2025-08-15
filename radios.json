@@ -555,7 +555,8 @@
     "descripcion": "UD Las Palmas, CD Tenerife",
     "pais": "España",
     "id_thesportsdb": ["133795", "133790"],
-    "streams": ["https://rtvc-radio.flumotion.com/rtvc-radio/radio1-high.mp3"]  },
+    "streams": ["https://rtvc-radio.flumotion.com/rtvc-radio/radio1-high.mp3"]
+  },
   {
     "id": "radio_clm",
     "nombre": "Radio Castilla-La Mancha",
@@ -572,17 +573,20 @@
     "id_thesportsdb": "134608",
     "streams": ["https://play.cdn.enetres.net/56495F77FD124FECA75590A906965F2C023/023/playlist.m3u8"]
   },
-     "id": "sin_tregua_radio",
-    "nombre": "Sin Tregua Radio",
-    "descripcion": "Racing de Santander (Fan Radio)",
-    "pais": "España",
-    "id_thesportsdb": ["133796"],
-    "streams": ["https://stream.zeno.fm/4t2071y0w7zuv"]
-  } {
+  {
     "id": "la_super_7_fm",
     "nombre": "La Super 7 FM",
     "descripcion": "Deportes y noticias",
     "pais": "República Dominicana",
     "streams": ["https://sonic.radiostreaminglatino.com:10849/"]
+  },
+  {
+    "id": "sin_tregua_radio",
+    "nombre": "Sin Tregua Radio",
+    "descripcion": "Racing de Santander (Fan Radio)",
+    "pais": "España",
+    "id_thesportsdb": ["133796"],
+    "streams": ["https://stream.zeno.fm/4t2071y0w7zuv"]
   }
 ]
+```---
